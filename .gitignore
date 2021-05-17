@@ -1,0 +1,12 @@
+/*
+/*/
+
+# ignore everything except:
+!/src/
+!/.gitignore
+!/pom.xml
+!/LICENSE*
+!/README*
+
+# but still ignore prototype test classes:
+___*.java
