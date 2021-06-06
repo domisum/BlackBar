@@ -95,11 +95,11 @@ public class BlackBar
 	
 	private static Coordinate2DInt getDefaultLayout()
 	{
-		final int dinA4WidthCm = 21;
-		final double dinA4HeightCm = 29.5;
+		final double dinA4WidthCm = 29.5;
+		final double dinA4HeightCm = 21;
 		final int numberOfBoxesPerCm = 2;
 		
-		int daysPerRow = dinA4WidthCm*numberOfBoxesPerCm;
+		int daysPerRow = (int) Math.round(dinA4WidthCm*numberOfBoxesPerCm);
 		int numberOfRows = (int) Math.round(dinA4HeightCm*numberOfBoxesPerCm);
 		var pageLayout = new Coordinate2DInt(daysPerRow, numberOfRows);
 		
